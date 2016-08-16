@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Corbel.ttf">
+            <string>Corbel</string>
+            <string>Corbel</string>
+            <string>Corbel</string>
+            <string>Corbel</string>
+            <string>Corbel</string>
+            <string>Corbel</string>
+            <string>Corbel</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="simple_tip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grT-8Z-dJl">
+                                <rect key="frame" x="247" y="252" width="106" height="41"/>
+                                <color key="backgroundColor" red="0.55686274509803924" green="0.26666666666666666" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="idu-6d-ik6"/>
+                                    <constraint firstAttribute="width" constant="106" id="zQI-WV-ECz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="20"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title=" calculate ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tP7-BP-LXZ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="bill total" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Rml-nx-BlZ">
+                                <rect key="frame" x="179" y="106" width="242" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="PW5-E1-oKo"/>
+                                    <constraint firstAttribute="height" constant="40" id="hmr-zm-s4C"/>
+                                </constraints>
+                                <color key="textColor" red="0.5568627451" green="0.2666666667" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="IC2-wr-heD"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="simple tipper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjS-Hy-5eB">
+                                <rect key="frame" x="178" y="25" width="242" height="33"/>
+                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="33"/>
+                                <color key="textColor" red="0.5568627451" green="0.2666666667" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StT-OH-BtQ">
+                                <rect key="frame" x="109" y="392" width="380" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OV8-5X-mRX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="20"/>
+                                <color key="textColor" red="0.5568627451" green="0.2666666667" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wq-Fh-uTP">
+                                <rect key="frame" x="179" y="340" width="243" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="N6n-5f-gFH"/>
+                                    <constraint firstAttribute="height" constant="21" id="SAR-xP-oTF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="20"/>
+                                <color key="textColor" red="0.5568627451" green="0.2666666667" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="tip %" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sLg-4l-10c">
+                                <rect key="frame" x="178" y="179" width="242" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="P45-d0-PT1"/>
+                                </constraints>
+                                <color key="textColor" red="0.5568627451" green="0.2666666667" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="oeq-v5-JMh"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A David Ciaffoni production ©2016 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLK-RC-fzs">
+                                <rect key="frame" x="179" y="559" width="241" height="21"/>
+                                <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0039215686274509803" green="0.44705882352941173" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="sLg-4l-10c" firstAttribute="top" secondItem="Rml-nx-BlZ" secondAttribute="bottom" constant="33" id="0zH-BN-3GJ"/>
+                            <constraint firstItem="gjS-Hy-5eB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="4Hy-ta-cZS"/>
+                            <constraint firstItem="StT-OH-BtQ" firstAttribute="leading" secondItem="2wq-Fh-uTP" secondAttribute="leading" constant="-70" id="CU8-qJ-JOe"/>
+                            <constraint firstItem="sLg-4l-10c" firstAttribute="trailing" secondItem="gjS-Hy-5eB" secondAttribute="trailing" id="FMk-KH-k2m"/>
+                            <constraint firstItem="sLg-4l-10c" firstAttribute="leading" secondItem="gjS-Hy-5eB" secondAttribute="leading" id="Id8-Wy-tAL"/>
+                            <constraint firstItem="gjS-Hy-5eB" firstAttribute="centerX" secondItem="Rml-nx-BlZ" secondAttribute="centerX" constant="-1" id="LWP-1I-cNJ"/>
+                            <constraint firstItem="2wq-Fh-uTP" firstAttribute="top" secondItem="grT-8Z-dJl" secondAttribute="bottom" constant="47" id="OZi-Lb-O4I"/>
+                            <constraint firstItem="StT-OH-BtQ" firstAttribute="top" secondItem="2wq-Fh-uTP" secondAttribute="bottom" constant="31" id="YDh-YX-kHr"/>
+                            <constraint firstItem="grT-8Z-dJl" firstAttribute="centerX" secondItem="2wq-Fh-uTP" secondAttribute="centerX" constant="-0.5" id="bip-Tm-2QL"/>
+                            <constraint firstItem="gjS-Hy-5eB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="bvn-mh-yBx"/>
+                            <constraint firstItem="Rml-nx-BlZ" firstAttribute="centerX" secondItem="grT-8Z-dJl" secondAttribute="centerX" id="etQ-Pq-urR"/>
+                            <constraint firstItem="Rml-nx-BlZ" firstAttribute="top" secondItem="gjS-Hy-5eB" secondAttribute="bottom" constant="48" id="nCV-x8-HVE"/>
+                            <constraint firstItem="grT-8Z-dJl" firstAttribute="top" secondItem="sLg-4l-10c" secondAttribute="bottom" constant="33" id="pMM-5k-Sao"/>
+                            <constraint firstItem="StT-OH-BtQ" firstAttribute="trailing" secondItem="Rml-nx-BlZ" secondAttribute="trailing" constant="68" id="yQU-U6-5y6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btButton" destination="grT-8Z-dJl" id="fiD-HU-LoF"/>
+                        <outlet property="lbTipAmount" destination="StT-OH-BtQ" id="Kof-oT-Fkp"/>
+                        <outlet property="lbTotalAmount" destination="2wq-Fh-uTP" id="8Mp-1d-X9q"/>
+                        <outlet property="txtBillAmount" destination="Rml-nx-BlZ" id="AQh-4X-ksB"/>
+                        <outlet property="txtTipPercent" destination="sLg-4l-10c" id="qzl-8b-6ZD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="239"/>
+        </scene>
+    </scenes>
+</document>
